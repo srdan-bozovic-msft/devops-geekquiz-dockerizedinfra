@@ -1,0 +1,16 @@
+db:
+  environment:
+  - MYSQL_ROOT_PASSWORD=pwd_goes_here
+  - MYSQL_DATABASE=geekquizmvcmysql4
+  - MYSQL_USER=super_boss
+  - MYSQL_PASSWORD=pwd_goes_here
+  image: mysql
+  volumes:
+  - /var/lib/mysql:/var/lib/mysql
+webapp:
+  image: web
+  links:
+  - db
+  ports:
+  - 80:80
+  restart: always
