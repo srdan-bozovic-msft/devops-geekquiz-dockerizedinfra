@@ -43,7 +43,7 @@ workflow docker-geekquiz-v2
 	
 
  #Getting json template for ARM
- $TemplateFile = 'https://raw.githubusercontent.com/srdjan-bozovic/docker-geekquiz/master/docker-deploy.json'
+ $TemplateFile = 'https://raw.githubusercontent.com/srdjan-bozovic/devops-geekquiz-dockerizedinfra/master/azure-resource-group/GeekQuizTemplate/GeekQuizTemplate/Templates/WebSite.json'
 
  #Transfroming local system time&date to proper format for ARM usafe
  $invalidChars = [io.path]::GetInvalidFileNamechars() 
